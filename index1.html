@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Frutas e Imágenes</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: flex-start; /* Cambié 'flex-end' a 'flex-start' */
+    }
+    .frutas {
+      width: 40%;
+      margin: 20px;
+    }
+    .frutas th, .frutas td {
+      border: 1px solid #dddddd;
+      padding: 12px;
+      text-align: left; /* Cambié 'center' a 'left' */
+    }
+    .frutas th {
+      background-color: #f2f2f2;
+    }
+    .frutas img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Lista de Frutas con Imágenes</h2>
+
+  <div class="container">
+    <table class="frutas">
+      <tr>
+        <th>Fruta</th>
+        <th>Imagen</th>
+      </tr>
+      <tr>
+        <td>Manzanas</td>
+        <td><img src="/Primera clase/Imagenes/manzana.avif" alt="Manzanas"></td>
+      </tr>
+      <tr>
+        <td>Plátanos</td>
+        <td><img src="/Primera clase/Imagenes/platano.jpg" alt="Plátanos"></td>
+      </tr>
+      <tr>
+        <td>Naranjas</td>
+        <td><img src="/Primera clase/Imagenes/naranja.jpg" alt="Naranjas"></td>
+      </tr>
+      <tr>
+        <td>Fresas</td>
+        <td><img src="/Primera clase/Imagenes/fresa.jpg" alt="Fresas"></td>
+      </tr>
+      <tr>
+        <td>Uvas</td>
+        <td><img src="/Primera clase/Imagenes/uva.jpg" alt="Uvas"></td>
+      </tr>
+      <tr>
+        <td>Piñas</td>
+        <td><img src="/Primera clase/Imagenes/piña.jpg" alt="Piñas"></td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

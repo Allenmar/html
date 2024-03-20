@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otro Formulario con Menú</title>
+  <style>
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 15px;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="otroFormulario" action="procesar_formulario.php" method="post">
+
+    <label for="producto">Nombre del nuevo producto</label>
+    <input type="text" id="producto" name="producto" value="" required />
+
+    <label for="detalles">Detalles del producto</label>
+    <textarea id="detalles" name="detalles" cols="40" rows="5" required></textarea>
+
+    <label for="categoria">Categoría del producto</label>
+    <select id="categoria" name="categoria">
+      <option value="Electrónicos">Electrónicos</option>
+      <option value="Ropa">Ropa</option>
+      <option value="Hogar">Hogar</option>
+      <option value="Otro">Otro</option>
+    </select>
+
+    <input type="submit" value="Enviar">
+    <input type="submit" value="Cancelar">
+
+  </form>
+
+</body>
+</html>
